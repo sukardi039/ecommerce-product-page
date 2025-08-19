@@ -137,7 +137,7 @@
 .read-more-toggle-button {
   background: none;
   border: none;
-  color: #eb6425; /* Blue color */
+  color: #eb6425; /* red color */
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
@@ -148,5 +148,5 @@
 }
 
 .read-more-toggle-button:hover {
-  color: #d8681d; /* Darker blue on hover */
+  color: #d8681d; /* Darker red on hover */
 }
