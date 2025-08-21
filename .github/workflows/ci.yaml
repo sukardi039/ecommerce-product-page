@@ -8,12 +8,12 @@ on:
   # Triggers the workflow on 'push' events to the 'main' branch.
   # This means every time code is pushed directly to 'main' (or a PR is merged into 'main').
   push:
-    branches: [ main ] # Indented 2 spaces from 'push'
+    branches: [ main, feature/ci-test2 ] # Indented 2 spaces from 'push'
 
   # Triggers the workflow on 'pull_request' events targeting the 'main' branch.
   # This is crucial for pre-merge checks, ensuring code quality before integration.
   pull_request:
-    branches: [ main ] # Indented 2 spaces from 'pull_request'
+    branches: [ main, feature/ci-test2 ] # Indented 2 spaces from 'pull_request'
 
   # Allows you to run this workflow manually from the GitHub Actions tab.
   # Useful for testing or re-running failed workflows.
