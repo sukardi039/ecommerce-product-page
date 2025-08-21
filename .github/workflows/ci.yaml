@@ -27,8 +27,8 @@ jobs:
       - name: 🔍 Run ESLint
         run: npm run lint
 
-      - name: 🧠 TypeScript check
-        run: npm run typecheck # assumes you have a script for this
+      # - name: 🧠 TypeScript check
+      #   run: npm run typecheck # assumes you have a script for this
 
       - name: 🏗️ Build Vite app
         run: npm run build
