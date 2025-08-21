@@ -66,6 +66,17 @@
   margin-bottom: 16px; /* Space below */
 }
 
+.product-title-card {
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 24px 32px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Styles for the product description */
 .product-description {
   color: #374151; /* Medium gray */

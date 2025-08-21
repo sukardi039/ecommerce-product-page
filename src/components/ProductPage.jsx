@@ -41,7 +41,9 @@ function ProductInfo({ product }) {
 
   return (
     <div>
-      <h1 className="product-title">{product.title}</h1>
+      <div className="product-title-card">
+        <h1 className="product-title">{product.title}</h1>
+      </div>
       <hr
         style={{
           margin: "16px 0",
