@@ -32,19 +32,3 @@ EXPOSE 80
 # Command to run Nginx when the container starts
 CMD ["nginx", "-g", "daemon off;"]
 
-# nginx.conf
-
-server {
-listen 80;
-server_name localhost;
-
-# Directory where the static files are
-root /usr/share/nginx/html;
-index index.html index.htm;
-
-# This is the key part for SPAs:
-# If a file is not found, fall back to index.html
-location / {
-try_files $uri $uri/ /index.html;
-}
-}
