@@ -1,5 +1,7 @@
-import "../App.css"; // Importing CSS for styling
-import React, { useState } from "react"; // Import useState hook
+
+import '../App.css'; // Importing CSS for styling
+import React, { useState } from 'react'; // Import useState hook
+
 
 // Product data (This will eventually come from an API)
 const product = {
@@ -35,7 +37,9 @@ function ProductInfo({ product }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   // Define a short version of the description for initial display
-  const shortDescription = product.description.substring(0, 150) + "...";
+
+  const shortDescription = product.description.substring(0, 150) + '...';
+
   // Check if the description is long enough to require a toggle
   const needsToggle = product.description.length > 150;
 
@@ -60,7 +64,9 @@ function ProductInfo({ product }) {
             onClick={() => setIsExpanded(!isExpanded)}
             className="read-more-toggle-button"
           >
-            {isExpanded ? "Read Less" : "Read More"}
+
+            {isExpanded ? 'Read Less' : 'Read More'}
+
           </button>
         )}
       </p>
@@ -93,10 +99,12 @@ function ProductPage() {
         <ProductInfo product={product} />
         {/* Placeholder for future features */}
         <div className="quantity-placeholder-section">
-          <p className="quantity-placeholder-text">
-            Quantity: [Placeholder for Quantity Selector]
-          </p>
-          <button className="add-to-cart-button">Add to Cart</button>
+
+          <p className="quantity-placeholder-text">Quantity: [Placeholder for Quantity Selector]Sophia version</p>
+          <button className="add-to-cart-button">
+            Add to Cart
+          </button>
+
         </div>
       </div>
     </div>
